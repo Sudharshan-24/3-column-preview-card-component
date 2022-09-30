@@ -1,0 +1,133 @@
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--very-light-gray-background-headings-buttons);
+}
+
+.card {
+    max-width: 800px;
+    margin: 140px auto;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 60vh;
+}
+
+/* .left-content,
+.middle-content,
+.right-content {
+    width: 100%;
+} */
+
+.left-content {
+    background-color: var(--bright-orange);
+}
+
+.middle-content {
+    background-color: var(--dark-cyan);
+}
+
+.right-content {
+    background-color: var(--very-dark-cyan);
+}
+
+.car-icon-image {
+    margin: 40px 0 30px 40px;
+}
+
+.car-type {
+    color: var(--very-light-gray-background-headings-buttons);
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.125rem;
+    text-transform: uppercase;
+    margin: 0 0 25px 40px;
+}
+
+.terrain-uses {
+    margin-left: 40px;
+    color: var(--transparent-white-paragraphs);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.75rem;
+    line-height: 1.8;
+    width: 63%;
+}
+
+.btn {
+    margin: 70px 0 40px 40px;
+    padding: 12px;
+    border: none;
+    border-radius: 40px;
+    width: 120px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.btn-sedan {
+    color: var(--bright-orange);
+}
+
+.btn-sedan:hover {
+    background-color: var(--bright-orange);
+}
+
+.btn-suv {
+    color: var(--dark-cyan);
+}
+
+.btn-suv:hover {
+    background-color: var(--dark-cyan);
+}
+
+.btn-luxury {
+    color: var(--very-dark-cyan);
+}
+
+.btn-luxury:hover {
+    background-color: var(--very-dark-cyan);
+}
+
+.btn-sedan:hover,
+.btn-suv:hover,
+.btn-luxury:hover {
+    color: var(--transparent-white-paragraphs);
+    border: 2px solid var(--transparent-white-paragraphs);
+    cursor: pointer;
+}
+
+.attribution {
+    font-size: 16px;
+    font-family: 'Lexend Deca', sans-serif;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+@media screen and (max-width: 375px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin: 40px;
+        border-radius: 8px;
+        overflow: hidden;
+        height: auto;
+    }
+}
